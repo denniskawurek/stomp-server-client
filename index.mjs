@@ -4,7 +4,7 @@ import { WebSocket } from 'ws';
 Object.assign(global, { WebSocket });
 
 const client = new Client({
-  brokerURL: 'ws://localhost:5555/ws',
+  brokerURL: 'ws://localhost:61613/ws',
   onConnect: () => {
     console.log("connected!");
     client.subscribe('/topic/1', message =>
